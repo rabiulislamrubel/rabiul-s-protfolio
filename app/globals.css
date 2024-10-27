@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-shadow{
+  @apply text-[#95A5A7] [text-shadow:_1px_1px_2px_#3a3a3a,_-1px_-1px_2px_#8d8d8d];
+}
+.center{
+  @apply flex items-center justify-center;
+}
+/* .box-shadow{
+  @apply bg-[#95A5A7] shadow-[_1px_1px_2px_#3a3a3a,_-1px_-1px_2px_#8d8d8d];
+} */
+.text-style{
+  @apply text-[#95A5A7] [text-shadow:_1px_1px_2px_#3a3a3a,_-1px_-1px_2px_#8d8d8d] font-bold absolute text-xl;
+}
+
+.card{
+  @apply transition-shadow duration-500 p-2 grid md:grid-cols-2 md:grid-rows-1 md:gap-3 lg:grid-cols-1 lg:grid-rows-1 lg:text-center hover:box-shadow cursor-pointer;
+}
+
+.container{
+  @apply w-[90%] mr-auto ml-auto;
+}
+
+
+
+@layer utilities{
+  .box-shadow{
+      @apply bg-[#95A5A7] shadow-[_1px_1px_2px_#3a3a3a,_-1px_-1px_2px_#8d8d8d];
+  }
+  
+}
